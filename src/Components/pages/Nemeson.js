@@ -58,14 +58,35 @@ const Nemeson = () => {
         <Link to="/">
           <img src={logoLigth} alt="logo" className="logoimg" />
         </Link>
-        <div className="carousel__section">
+        <div className="nemeson__info">
+          <div className="product__imgs">
+            <img className="nemeson__bigImg" src={carouselPos === 1 ? nemeson : carouselPos === 2 ? rendernemeson : nemesonAgua} alt="cepillos" />
+            <div className="productImg__small">
+              <img className={carouselPos != 1 && "img__inActive"} onClick={() => setCarouselPos(1)} src={nemeson} alt="nemeson" />
+              <img className={carouselPos != 2 && "img__inActive"} onClick={() => setCarouselPos(2)} src={rendernemeson} alt="nemeson" />
+              <img className={carouselPos != 3 && "img__inActive"} onClick={() => setCarouselPos(3)} src={nemesonAgua} alt="nemeson" />
+            </div>
+          </div>
+          <div className="product__text">
+            <h2>Nemeson One</h2>
+            <p>
+              Nemeson One es el único dispositivo auditivo inteligente del mercado que garantiza una recuperación de la audición mínima del 75% a través de una amplificación por frecuencias selectiva
+              y automática.
+            </p>
+            <p>
+              Dispone de hasta 6 programas diferentes que se adaptan al 85% de los perfiles auditivos existentes. Su procesador digital permite ofrecer una cobertura especifica para cada paciente,
+              mejorando el sonido original, amplificando las frecuencias y reduciendo los ruidos del exterior.
+            </p>
+          </div>
+        </div>
+        {/* <div className="carousel__section">
           <button className={leftBtn ? "blue_btn" : "btn__nemeson"} onMouseEnter={() => setLeftBtn(true)} onMouseLeave={() => setLeftBtn(false)} onClick={() => subPos()}></button>
           <img className={carouselPos === 1 ? "productImg" : "inActive"} src={nemeson} alt="nemeson" />
           <img className={carouselPos === 2 ? "productImg" : "inActive"} src={rendernemeson} alt="nemeson" />
           <img className={carouselPos === 3 ? "productImgAgua" : "inActive"} src={nemesonAgua} alt="nemeson" />
 
           <button className={rigthBtn ? "blue_btn" : "btn__nemeson"} onMouseEnter={() => setRigthBtn(true)} onMouseLeave={() => setRigthBtn(false)} onClick={() => addPos()}></button>
-        </div>
+        </div> */}
         <ul>
           <li className="nemesonOne">Nemeson One</li>
           <li>

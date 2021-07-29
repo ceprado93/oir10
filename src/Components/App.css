@@ -121,6 +121,57 @@ button:focus {
   height: 60vh;
   display: block;
   margin: 0 auto;
+  width: 40%;
+  object-fit: contain;
+}
+
+.nemeson__bigImg {
+  height: 50vh;
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+  object-fit: contain;
+  margin-bottom: 4rem;
+}
+
+.productImg__small {
+  display: flex;
+  justify-content: center;
+}
+
+.productImg__small img {
+  height: 10vh;
+  width: 20%;
+  object-fit: contain;
+}
+
+.product__info,
+.nemeson__info {
+  display: flex;
+}
+
+.product__imgs {
+  width: 50%;
+}
+
+.img__inActive {
+  opacity: 0.4;
+}
+
+.product__text {
+  width: 40%;
+  margin-right: 10rem;
+  align-self: center;
+  color: #4d5b73;
+  text-align: justify;
+}
+
+.product__text h2 {
+  font-size: 2rem;
+}
+
+.product__text p {
+  font-size: 1.3rem;
 }
 
 .inActive {
@@ -224,6 +275,7 @@ button:focus {
 .accesories {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .accesories article {
@@ -249,13 +301,16 @@ button:focus {
 }
 
 .accesory__group {
-  margin: 0 15rem;
+  margin: 0 17rem;
   display: flex;
   align-items: center;
 }
 
 .accesory__group p {
   text-align: center;
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 3rem;
 }
 
 .spay__img {
@@ -546,7 +601,7 @@ input:focus {
   }
 
   .nemesonPage {
-    height: calc(100vh - 70px);
+    height: auto;
   }
 
   .productImg {
@@ -555,6 +610,56 @@ input:focus {
 
   .productImgAgua {
     height: 55vh;
+  }
+
+  .productImg__Cart {
+    width: 85%;
+  }
+
+  .nemeson__bigImg {
+    height: 50vh;
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    object-fit: contain;
+    margin-bottom: 4rem;
+  }
+
+  .productImg__small {
+    display: flex;
+    justify-content: center;
+  }
+
+  .productImg__small img {
+    height: 10vh;
+    width: 20%;
+    object-fit: contain;
+  }
+
+  .product__info,
+  .nemeson__info {
+    flex-direction: column;
+  }
+
+  .product__imgs {
+    width: 100%;
+  }
+
+  .img__inActive {
+    opacity: 0.4;
+  }
+
+  .product__text {
+    width: 80%;
+    margin-right: 0rem;
+  }
+
+  .product__text h2 {
+    font-size: 2rem;
+  }
+
+  .product__text p {
+    font-size: 1rem;
   }
 
   .btn__nemeson {
@@ -606,12 +711,9 @@ input:focus {
     margin-bottom: 50px;
   }
 
-  .productImg__Cart {
-    height: 45vh;
-  }
-
   .cartPage {
-    min-height: calc(100vh - 40px);
+    height: auto;
+    position: initial;
   }
 
   .cartPage ul {

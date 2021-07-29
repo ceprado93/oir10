@@ -24,7 +24,14 @@ const Cepillo = () => {
         <Link to="/">
           <img src={logoLigth} alt="logo" className="logoimg" />
         </Link>
-        <img className="productImg__Cart" src={cepillos} alt="cepillos" />
+        <div className="product__info">
+          <img className="productImg__Cart" src={cepillos} alt="cepillos" />
+          <div className="product__text">
+            <h2>Kit de cepillos Nemeson</h2>
+            <p>El kit de cepillos de nemeson incluye dos cepillos de diferentes tamaños, de 7 y 5 apliques de nylon, que te ayudarán a mantener tu nemeson en perfecto estado. </p>
+            <p>Optimiza la limpieza de tu dispositivo con nuestro spray de limpieza, diseñado para preservar la vida util de tu nemeson y asegurarte la mejor calidad auditiva.</p>
+          </div>
+        </div>
         <ul>
           <div>
             <li className="blueBottom__menu-cart">Precio: 2.50€</li>

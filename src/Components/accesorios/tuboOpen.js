@@ -24,7 +24,19 @@ const TuboOpen = () => {
         <Link to="/">
           <img src={logoLigth} alt="logo" className="logoimg" />
         </Link>
-        <img className="productImg__Cart" src={cable} alt="cable" />
+        <div className="product__info">
+          <img className="productImg__Cart" src={cable} alt="cable" />
+          <div className="product__text">
+            <h2>Tubo open</h2>
+            <p>
+              El Nemeson One es un dispositivo de ajuste abierto (BTE) que se colocan detrás del oído, conectándose con el canal auditivo a través de un tubo transparente denominado tubo open,
+              encargado de enviar el sonido amplificado al dome o tulipa.
+            </p>
+            <p>
+              El tubo open requiere de una fabricación en resina, por lo que es importante tener en cuenta que en algún momento debe ser sustituido. Se recomienda revisar su estado periódicamente.
+            </p>
+          </div>
+        </div>
         <ul>
           <div>
             <li className="blueBottom__menu-cart">Precio: 5.95€</li>
